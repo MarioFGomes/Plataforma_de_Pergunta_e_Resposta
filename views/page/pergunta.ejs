@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <%- include('../partials/head')%>
+<body>
+
+    <%- include('../partials/header')%>
+
+    <div class="container ">
+            <div class="alianmento">
+                <hr>
+                <h1><%= pergunta.titulo%></h1>
+               
+                <p><%= pergunta.descricao%></p>
+                <hr>
+
+        </div>
+
+      
+
+        <div class="alianmento"> 
+
+          
+
+            <% respostas.forEach(resposta=>{%>
+
+                <br>
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <p><%=resposta.corpo%></p>
+                    </div>
+                </div>
+              
+
+         <%})%>
+            
+        </div>
+
+      <form method="POST" action="/responder">
+        
+        <label for="textresposta">Resposta:</label>
+        <textarea id="textresposta" placeholder="Digite sua resposta" name="corpo" class="form-control"></textarea><br>
+        <input type="hidden" name="pergunta" value="<%= pergunta.id%>">
+        <button type="submit" class="btn btn-primary">Responder</button>
+      </form>
+    </div>
+
+
+
+</body>
+</html>

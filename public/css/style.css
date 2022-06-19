@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color:#eceff1;
+}
+
+#form-pergunta{
+    margin-top: 8vh;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+}
+
+.ul-menu{
+  display:flex;
+}
+.ul-menu li{
+   list-style-type: none;
+    margin-right: 2rem;
+}
+
+.ul-menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size:20px;
+   
+ }
+
+ .alianmento{
+    margin:2rem auto;
+    text-align:center;
+ }
+
+ #textresposta{
+    width: 100%;
+    height: 150px;
+ }
+

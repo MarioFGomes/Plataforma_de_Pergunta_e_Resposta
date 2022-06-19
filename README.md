@@ -1,0 +1,1 @@
+Projeto desenvolvido em Nodejs Ejs e Sequelize
